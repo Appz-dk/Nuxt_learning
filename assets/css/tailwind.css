@@ -13,3 +13,7 @@ body {
 .btn {
   @apply bg-[#12b488] text-white rounded-md text-sm px-3 py-2 hover:bg-[#12a088]
 }
+
+.card {
+  @apply p-4 h-full bg-white rounded-md shadow-md
+}
