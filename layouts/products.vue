@@ -1,51 +1,30 @@
 <template>
-  <header>
+   <header class="container flex justify-between mx-auto p-4 shadow-sm">
+    <NuxtLink class="font-bold custom-green" to="/"
+    ><h1>Nuxt App</h1></NuxtLink>
     <nav>
-      <NuxtLink class="logo-link" to="/products"><h1>My Logo</h1></NuxtLink>
-      <ul>
-        <li>
-          <NuxtLink class="nav-link" to="/">Home</NuxtLink>
-          <NuxtLink class="nav-link" to="/about">About</NuxtLink>
-          <NuxtLink class="nav-link" to="/products">Products</NuxtLink>
-        </li>
-      </ul>
+      <ul class="flex gap-4">
+        <NavLink to="/">
+          Home
+        </NavLink>
+        <NavLink to="/about">
+          About
+        </NavLink>
+        <NavLink to="/products">
+          Products
+        </NavLink>
+      </ul> 
     </nav>
   </header>
 
   <!-- Slot in page content -->
-  <main>
+  <main class="container mx-auto p-4">
     <slot />
   </main>
 </template>
 
 <style scoped>
-  ul {
-    list-style: none;
-    margin: 1rem 0;
-    padding: 0;
-  }
-
-  li > *:not(:first-child) {
-    margin-left: 1rem;
-  }
-
-  .nav-link {
-    text-underline-offset: 0.1em;
-    transition: text-decoration-color 300ms, text-underline-offset 300ms;
-  }
-
-  .nav-link:hover {
-    color: black;
-    text-underline-offset: 0.2em
-  }
-
-  .router-link-active {
-    color: green;
-    text-decoration-color: black;
-  }
-
-  .logo-link {
-    text-decoration: none;
-    color: black
+  .custom-green {
+    color: rgb(0, 220, 130)
   }
 </style>
