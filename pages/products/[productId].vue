@@ -1,6 +1,10 @@
 <script lang="ts" setup>
   const route = useRoute()
   const productId = route.params.productId
+
+  definePageMeta({
+    layout: 'products'
+  })
 </script>
 
 
