@@ -1,4 +1,3 @@
-<!-- This layout is identical to default.vue but wanted to try out definePageMeta -->
 <template>
   <header class="container flex justify-between mx-auto p-4 shadow-sm">
     <NuxtLink class="font-bold custom-green" to="/"
