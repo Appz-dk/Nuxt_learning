@@ -23,9 +23,3 @@
     <slot />
   </main>
 </template>
-
-<style scoped>
-  .custom-green {
-    color: rgb(0, 220, 130)
-  }
-</style>

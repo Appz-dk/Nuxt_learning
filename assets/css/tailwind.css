@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-200
+}
+
+.custom-green {
+  color: rgb(0, 220, 130);
+}
