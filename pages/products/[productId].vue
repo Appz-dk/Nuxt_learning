@@ -19,8 +19,7 @@
     <h2>Loading product...</h2>
   </div>
   <div v-else-if="product">
-    <h2>Product details for {{ product.id }}</h2>
-    <p>{{ product.description }}</p>
+    <ProductDetails :product="product" />
   </div>
   <div v-else>
     <h2>Sorry we could not find your product...</h2>
