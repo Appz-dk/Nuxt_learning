@@ -9,3 +9,7 @@ body {
 .custom-green {
   color: rgb(0, 220, 130);
 }
+
+.btn {
+  @apply bg-[#12b488] text-white rounded-md text-sm px-3 py-2 hover:bg-[#12a088]
+}
