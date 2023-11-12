@@ -9,7 +9,11 @@
   })
 
   const url = `https://fakestoreapi.com/products/${productId}`
-  const {data: product, pending} = useFetch<TProduct>(url)
+  const {data: product, pending, error} = useFetch<TProduct>(url)
+
+  if (error) {
+    throw createError({ statusCode: 404, message: "Sorry we could not find this product", fatal: true })
+  }
 </script>
 
 
@@ -21,10 +25,10 @@
   <div v-else-if="product">
     <ProductDetails :product="product" />
   </div>
-  <div v-else>
+  <!-- <div v-else>
     <h2>Sorry we could not find your product...</h2>
-  </div>
-  </template>
+  </div> -->
+</template>
 
 
 
