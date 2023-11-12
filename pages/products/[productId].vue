@@ -9,9 +9,9 @@
   })
 
   const url = `https://fakestoreapi.com/products/${productId}`
-  const {data: product, pending, error} = useFetch<TProduct>(url)
+  const { data: product, pending } = await useFetch<TProduct>(url)
 
-  if (error) {
+  if (!product.value) {
     throw createError({ statusCode: 404, message: "Sorry we could not find this product", fatal: true })
   }
 </script>
