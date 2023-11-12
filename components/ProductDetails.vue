@@ -12,9 +12,9 @@
 </script>
 
 <template>
-  <div class="card max-w-6xl mx-auto grid grid-rows-2 place-items-center sm:grid-cols-2 sm:grid-rows-1 sm:gap-x-16">
+  <div class="card max-w-6xl mx-auto grid grid-rows-2 place-items-center md:grid-cols-2 md:grid-rows-1 md:gap-x-16">
     <div class="p-7 max-w-md">
-      <img class="object-contain max-h-60 sm:max-h-96" :src="product.image" alt="Image of product"/>
+      <img class="object-contain max-h-60 md:max-h-96" :src="product.image" alt="Image of product"/>
     </div>
     <div class="p-7 flex flex-col gap-4">
       <h2 class="text-lg font-semibold md:text-3xl">{{ product.title }}</h2>
