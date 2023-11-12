@@ -1,5 +1,5 @@
 <template>
-  <header class="container flex justify-between mx-auto p-4 shadow-sm bg-white">
+  <header class="flex justify-between mx-auto p-4 shadow-sm bg-white">
     <NuxtLink class="font-bold custom-green" to="/"
     ><h1>Nuxt App</h1></NuxtLink>
     <nav>
@@ -18,7 +18,7 @@
   </header>
 
   <!-- Slot in page content -->
-  <main class="container mx-auto p-4">
+  <main class="mx-auto p-8">
     <slot />
   </main>
 </template>

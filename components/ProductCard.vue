@@ -16,7 +16,7 @@
 
 
 <template>
-  <div class="card gap-6 w-80 flex flex-col items-center">
+  <div class="card gap-6 w-72 flex flex-col items-center">
     <img class="object-contain max-h-36 rounded-md" :src="product.image"/>
     <h3 class="font-semibold line-clamp-2">{{ product.title }}</h3>
     <div class="mt-auto">
