@@ -13,11 +13,18 @@
   }
 
   defineProps({
-  error: {
-    type: Object as PropType<TError>,
+    error: {
+      type: Object as PropType<TError>,
+    }
+  })
+
+  const onClearError = () => {
+    clearError({ redirect: "/" })
   }
-})
+
 </script>
+
+
 
 <template>
   <main class="h-screen grid place-items-center">
@@ -25,6 +32,7 @@
       <h1 class="text-4xl font-bold my-2">{{ error?.statusCode }}</h1>
       <p class="text-lg my-2">Something went wrong...</p>
       <p class="my-2 text-red-600">{{ error?.message }}</p>
+      <button @click="onClearError" class="btn my-2">Back to Home</button>
     </div>
   </main>
 </template>
