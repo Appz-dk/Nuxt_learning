@@ -26,6 +26,10 @@
         <p class="font-bold mb-2 border-b-2 pb-1">Product description</p>
         <p class="block">{{ product.description }}</p>
       </div>
+      <button class="btn flex gap-2 justify-center items-center mx-auto">
+        <i class="material-icons">add_shopping_cart</i>
+        <span class="font-semibold">Add to cart</span>
+      </button>
     </div>
   </div>
 </template>
