@@ -1,4 +1,9 @@
 <script lang="ts" setup>
+
+  // Override global head settings
+  useHead({
+    title: "Homepage",
+  })
 </script>
 
 

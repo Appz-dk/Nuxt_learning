@@ -11,6 +11,12 @@
 
 
 <template>
+  <!-- Or override global head like this -->
+  <Head>
+    <Title>Nuxt Merch</Title>
+    <Meta name="description" content="Nuxt merch store" />
+  </Head>
+
   <h2 class="text-center">Products page</h2>
   <div class="grid grid-cols-1 gap-y-6 place-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     <ProductCard v-for="product in products" :product="product"/>

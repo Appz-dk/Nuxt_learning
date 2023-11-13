@@ -14,6 +14,16 @@
   if (!product.value) {
     throw createError({ statusCode: 404, message: "Sorry we could not find this product", fatal: true })
   }
+
+  useHead({
+    title: product.value?.title,
+    meta: [
+      {
+        name: "description",
+        content: product.value.description
+      },
+    ]
+  })
 </script>
 
 
