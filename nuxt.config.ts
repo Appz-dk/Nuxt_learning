@@ -6,4 +6,11 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/tailwind.css'
   ],
+
+  // Gets injectet to every page
+  app: {
+    head: {
+      title: "Nuxt App",
+    }
+  }
 })
