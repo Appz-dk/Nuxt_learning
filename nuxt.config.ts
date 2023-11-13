@@ -11,6 +11,16 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Nuxt App",
+      meta: [
+        {
+          name: "description", content: "Learning about Nuxt 3"
+        }
+      ],
+      link: [
+        {
+          rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+        }
+      ]
     }
   }
 })
